@@ -6,7 +6,7 @@ def line(array)
      puts "The line is currently empty."
   else
     answer=""
-    array.each_with_index { |name,index|
+    array.each_with_index { |name,index| 
     array.each_with_index do |name,index|
       answer+=" #{index+1}. #{name}"
     end
