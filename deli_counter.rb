@@ -1,3 +1,4 @@
+require 'pry'
 katz_deli=[]
 
 def line(array)
@@ -6,10 +7,8 @@ def line(array)
      puts "The line is currently empty."
   else
     answer=""
-    array.each_with_index { |name,index| 
-    array.each_with_index do |name,index|
-      answer+=" #{index+1}. #{name}"
-    end
+    array.each_with_index { |name,index|  answer+=" index+1. #{name}"}
+    binding.pry
     puts "The line is currently:#{answer}"
   end
 end
